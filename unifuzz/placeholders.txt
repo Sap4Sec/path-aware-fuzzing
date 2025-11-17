@@ -1,0 +1,38 @@
+@@
+    cflow
+    exiv2
+    flvmeta
+    jhead
+    mp3gain
+    mujs
+    tiffsplit
+
+@@ /dev/null
+    gdk
+    lame
+    mp42aac
+    pdftotext
+
+-o /dev/null @@
+    infoocap
+
+-S @@
+    objdump
+
+-e -vv -nr @@
+    tcpdump
+
+-A -a -l -S -s --special-syms --synthetic --with-symbol-versions -D @@
+    nm-new
+
+-f @@
+    imginfo
+
+. @@
+    jq
+    
+< @@
+    sql
+
+-y -i @@ -c:v mpeg4 -c:a copy -f mp4 /dev/null
+    ffmpeg

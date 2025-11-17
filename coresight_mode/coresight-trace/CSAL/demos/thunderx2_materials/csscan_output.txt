@@ -1,0 +1,720 @@
+roppinhoppin@hiramasa:~/CSAL/coresight-tools$ sudo python3 csscan.py --topology 0x0000000410000000
+@0x410000000    0x0bf 0x0af r2.0  ROM table
+@0x410020000    0x23b 0x101 r0.0  CoreSight timestamp generator
+@0x410001000    0x23b 0x908 r2.0  funnel                          in-ports:3
+@0x410002000    0x23b 0x961 r1.0  fifo                            TMC:ETF size:16384 memwidth:256
+@0x410003000    0x23b 0x909 r1.0  replicator                      out-ports:2
+@0x410004000    0x23b 0x961 r1.0  buffer                          TMC:ETR memwidth:128 wb:32
+@0x410005000    0x23b 0x912 r4.0  port                            TPIU
+@0x410006000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x410400000    0x18c 0x0af r1.2  ROM table
+@0x410410000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000000 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x410420000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x410430000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x410440000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x410470000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000000
+@0x410510000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000001 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x410520000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x410530000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x410540000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x410570000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000000
+@0x410610000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000002 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x410620000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x410630000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x410640000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x410670000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000000
+@0x410710000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000003 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x410720000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x410730000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x410740000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x410770000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000000
+@0x410800000    0x18c 0x0af r1.2  ROM table
+@0x410810000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000100 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x410820000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x410830000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x410840000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x410870000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000100
+@0x410910000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000101 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x410920000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x410930000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x410940000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x410970000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000100
+@0x410a10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000102 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x410a20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x410a30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x410a40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x410a70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000100
+@0x410b10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000103 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x410b20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x410b30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x410b40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x410b70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000100
+@0x410c00000    0x18c 0x0af r1.2  ROM table
+@0x410c10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000200 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x410c20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x410c30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x410c40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 claimed:0x8
+@0x410c70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000200
+@0x410d10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000201 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x410d20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x410d30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x410d40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x410d70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000200
+@0x410e10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000202 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x410e20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x410e30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x410e40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 claimed:0x6
+@0x410e70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000200
+@0x410f10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000203 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x410f20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x410f30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x410f40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x410f70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000200
+@0x411000000    0x18c 0x0af r1.2  ROM table
+@0x411010000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000300 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x411020000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x411030000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x411040000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x411070000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000300
+@0x411110000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000301 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x411120000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x411130000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x411140000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x411170000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000300
+@0x411210000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000302 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x411220000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x411230000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x411240000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x411270000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000300
+@0x411310000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000303 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x411320000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x411330000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x411340000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x411370000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000300
+@0x411400000    0x18c 0x0af r1.2  ROM table
+@0x411410000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000400 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x411420000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x411430000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x411440000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x411470000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000400
+@0x411510000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000401 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x411520000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x411530000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x411540000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x411570000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000400
+@0x411610000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000402 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x411620000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x411630000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x411640000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x411670000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000400
+@0x411710000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000403 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x411720000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x411730000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x411740000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x411770000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000400
+@0x411800000    0x18c 0x0af r1.2  ROM table
+@0x411810000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000500 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x411820000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x411830000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x411840000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x411870000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000500
+@0x411910000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000501 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x411920000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x411930000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x411940000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x411970000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000500
+@0x411a10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000502 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x411a20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x411a30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x411a40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x411a70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000500
+@0x411b10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000503 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x411b20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x411b30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x411b40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x411b70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000500
+@0x411c00000    0x18c 0x0af r1.2  ROM table
+@0x411c10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000600 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x411c20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x411c30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x411c40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x411c70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000600
+@0x411d10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000601 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x411d20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x411d30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x411d40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x411d70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000600
+@0x411e10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000602 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x411e20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x411e30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x411e40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x411e70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000600
+@0x411f10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000603 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x411f20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x411f30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x411f40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x411f70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000600
+@0x412000000    0x18c 0x0af r1.2  ROM table
+@0x412010000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000700 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x412020000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x412030000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x412040000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x412070000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000700
+@0x412110000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000701 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x412120000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x412130000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x412140000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x412170000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000700
+@0x412210000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000702 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x412220000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x412230000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x412240000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x412270000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000700
+@0x412310000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000703 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x412320000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x412330000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x412340000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x412370000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000700
+@0x412400000    0x18c 0x0af r1.2  ROM table
+@0x412410000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000800 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x412420000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x412430000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x412440000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x412470000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000800
+@0x412510000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000801 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x412520000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x412530000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x412540000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x412570000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000800
+@0x412610000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000802 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x412620000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x412630000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x412640000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x412670000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000800
+@0x412710000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000803 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x412720000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x412730000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x412740000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x412770000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000800
+@0x412800000    0x18c 0x0af r1.2  ROM table
+@0x412810000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000900 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x412820000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x412830000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x412840000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x412870000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000900
+@0x412910000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000901 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x412920000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x412930000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x412940000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x412970000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000900
+@0x412a10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000902 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x412a20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x412a30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x412a40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x412a70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000900
+@0x412b10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000903 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x412b20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x412b30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x412b40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x412b70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000900
+@0x412c00000    0x18c 0x0af r1.2  ROM table
+@0x412c10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000a00 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x412c20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x412c30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x412c40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x412c70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000a00
+@0x412d10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000a01 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x412d20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x412d30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x412d40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x412d70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000a00
+@0x412e10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000a02 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x412e20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x412e30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x412e40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x412e70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000a00
+@0x412f10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000a03 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x412f20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x412f30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x412f40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x412f70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000a00
+@0x413400000    0x18c 0x0af r1.2  ROM table
+@0x413410000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000b00 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x413420000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x413430000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x413440000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 claimed:0xa
+@0x413470000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000b00
+@0x413510000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000b01 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x413520000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x413530000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x413540000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x413570000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000b00
+@0x413610000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000b02 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x413620000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x413630000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x413640000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x413670000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000b00
+@0x413710000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000b03 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x413720000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x413730000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x413740000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x413770000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000b00
+@0x413c00000    0x18c 0x0af r1.2  ROM table
+@0x413c10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000c00 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x413c20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x413c30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x413c40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x413c70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000c00
+@0x413d10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000c01 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x413d20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x413d30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x413d40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x413d70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000c00
+@0x413e10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000c02 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x413e20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x413e30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x413e40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x413e70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000c00
+@0x413f10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000c03 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x413f20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x413f30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x413f40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x413f70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000c00
+@0x414000000    0x18c 0x0af r1.2  ROM table
+@0x414010000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000d00 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x414020000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x414030000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x414040000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x414070000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000d00
+@0x414110000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000d01 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x414120000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x414130000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x414140000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x414170000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000d00
+@0x414210000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000d02 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x414220000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x414230000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x414240000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x414270000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000d00
+@0x414310000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000d03 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x414320000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x414330000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x414340000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x414370000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000d00
+@0x414400000    0x18c 0x0af r1.2  ROM table
+@0x414410000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000e00 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x414420000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x414430000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x414440000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x414470000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000e00
+@0x414510000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000e01 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x414520000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x414530000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x414540000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x414570000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000e00
+@0x414610000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000e02 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x414620000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x414630000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x414640000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 claimed:0x2
+@0x414670000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000e00
+@0x414710000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000e03 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x414720000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x414730000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x414740000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x414770000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000e00
+@0x414800000    0x18c 0x0af r1.2  ROM table
+@0x414810000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000f00 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x414820000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x414830000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x414840000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x414870000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000f00
+@0x414910000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000f01 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x414920000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x414930000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x414940000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x414970000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000f00
+@0x414a10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000f02 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x414a20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x414a30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x414a40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x414a70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000f00
+@0x414b10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81000f03 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x414b20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x414b30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x414b40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x414b70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81000f00
+@0x415000000    0x18c 0x0af r1.2  ROM table
+@0x415010000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001000 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x415020000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x415030000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x415040000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x415070000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001000
+@0x415110000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001001 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x415120000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x415130000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x415140000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 claimed:0x1
+@0x415170000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001000
+@0x415210000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001002 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x415220000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x415230000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x415240000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x415270000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001000
+@0x415310000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001003 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x415320000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x415330000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x415340000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 claimed:0x1
+@0x415370000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001000
+@0x415800000    0x18c 0x0af r1.2  ROM table
+@0x415810000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001100 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x415820000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x415830000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x415840000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x415870000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001100
+@0x415910000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001101 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x415920000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x415930000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x415940000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x415970000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001100
+@0x415a10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001102 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x415a20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x415a30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x415a40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x415a70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001100
+@0x415b10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001103 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x415b20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x415b30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x415b40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x415b70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001100
+@0x415c00000    0x18c 0x0af r1.2  ROM table
+@0x415c10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001200 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x415c20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x415c30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x415c40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x415c70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001200
+@0x415d10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001201 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x415d20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x415d30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x415d40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x415d70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001200
+@0x415e10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001202 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x415e20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x415e30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x415e40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x415e70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001200
+@0x415f10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001203 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x415f20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x415f30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x415f40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x415f70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001200
+@0x416000000    0x18c 0x0af r1.2  ROM table
+@0x416010000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001300 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x416020000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x416030000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x416040000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x416070000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001300
+@0x416110000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001301 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x416120000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x416130000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x416140000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x416170000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001300
+@0x416210000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001302 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x416220000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x416230000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x416240000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x416270000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001300
+@0x416310000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001303 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x416320000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x416330000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x416340000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x416370000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001300
+@0x416400000    0x18c 0x0af r1.2  ROM table
+@0x416410000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001400 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x416420000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x416430000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x416440000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x416470000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001400
+@0x416510000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001401 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x416520000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x416530000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x416540000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x416570000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001400
+@0x416610000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001402 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x416620000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x416630000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x416640000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 claimed:0xf
+@0x416670000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001400
+@0x416710000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001403 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x416720000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x416730000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x416740000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x416770000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001400
+@0x416800000    0x18c 0x0af r1.2  ROM table
+@0x416810000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001500 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x416820000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x416830000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x416840000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x416870000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001500
+@0x416910000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001501 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x416920000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x416930000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x416940000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x416970000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001500
+@0x416a10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001502 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x416a20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x416a30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x416a40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x416a70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001500
+@0x416b10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001503 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x416b20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x416b30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x416b40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x416b70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001500
+@0x416c00000    0x18c 0x0af r1.2  ROM table
+@0x416c10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001600 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x416c20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x416c30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x416c40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x416c70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001600
+@0x416d10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001601 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x416d20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x416d30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x416d40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x416d70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001600
+@0x416e10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001602 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x416e20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x416e30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x416e40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x416e70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001600
+@0x416f10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001603 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x416f20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x416f30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x416f40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x416f70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001600
+@0x417000000    0x18c 0x0af r1.2  ROM table
+@0x417010000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001700 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x417020000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x417030000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x417040000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x417070000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001700
+@0x417110000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001701 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x417120000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x417130000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x417140000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 claimed:0x4
+@0x417170000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001700
+@0x417210000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001702 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x417220000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x417230000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x417240000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x417270000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001700
+@0x417310000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001703 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x417320000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x417330000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x417340000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x417370000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001700
+@0x417400000    0x18c 0x0af r1.2  ROM table
+@0x417410000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001800 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x417420000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x417430000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x417440000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x417470000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001800
+@0x417510000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001801 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x417520000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x417530000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x417540000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x417570000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001800
+@0x417610000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001802 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x417620000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x417630000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x417640000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x417670000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001800
+@0x417710000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001803 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x417720000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x417730000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x417740000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x417770000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001800
+@0x417800000    0x18c 0x0af r1.2  ROM table
+@0x417810000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001900 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x417820000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x417830000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x417840000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x417870000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001900
+@0x417910000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001901 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x417920000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x417930000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x417940000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x417970000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001900
+@0x417a10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001902 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x417a20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x417a30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x417a40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x417a70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001900
+@0x417b10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001903 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x417b20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x417b30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x417b40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x417b70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001900
+@0x417c00000    0x18c 0x0af r1.2  ROM table
+@0x417c10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001a00 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x417c20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x417c30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x417c40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x417c70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001a00
+@0x417d10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001a01 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x417d20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x417d30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x417d40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x417d70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001a00
+@0x417e10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001a02 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x417e20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x417e30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x417e40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x417e70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001a00
+@0x417f10000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001a03 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x417f20000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x417f30000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x417f40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x417f70000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001a00
+@0x418000000    0x18c 0x0af r1.2  ROM table
+@0x418010000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001b00 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x418020000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x418030000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x418040000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x418070000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001b00
+@0x418110000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001b01 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x418120000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x418130000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x418140000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x418170000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001b00
+@0x418210000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001b02 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x418220000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x418230000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x418240000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x418270000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001b00
+@0x418310000    0x18c 0x0af r1.2  core-debug     Arm v8.1-A rev0  aff=0x81001b03 pfr=0x11001111 dfr=0x10305407 bkpt:6 wpt:4 PMUv3-v8.1 pc-sampling:3
+@0x418320000    0x23b 0x906 r4.0  CTI                             channels:8 triggers:8
+@0x418330000    0x18c 0x0af r1.2  PMU (core)     Arm PMUv3 rev0   aff=0x81000000 counters:6 64-bit not-exportable
+@0x418340000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000023 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4
+@0x418370000    0x18c 0x0af r1.2  generic PrimeCell peripheral: DEVARCH=0x47700a00 DEVAFF=0x81001b00
+
+ATB topology detection
+@0x410001000    0x23b 0x908 r2.0  funnel                          in-ports:3 unlocked integration
+  0->0  @0x410002000    0x23b 0x961 r1.0  fifo                            TMC:ETF size:16384 memwidth:256 unlocked integration
+@0x410002000    0x23b 0x961 r1.0  fifo                            TMC:ETF size:16384 memwidth:256 unlocked integration
+  0->0  @0x410003000    0x23b 0x909 r1.0  replicator                      out-ports:2 unlocked integration
+@0x410003000    0x23b 0x909 r1.0  replicator                      out-ports:2 unlocked integration
+  0->0  @0x410004000    0x23b 0x961 r1.0  buffer                          TMC:ETR memwidth:128 wb:32 unlocked integration
+@0x410004000    0x23b 0x961 r1.0  buffer                          TMC:ETR memwidth:128 wb:32 unlocked integration
+@0x410005000    0x23b 0x912 r4.0  port                            TPIU unlocked integration
+@0x410440000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x9
+@0x410540000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked
+@0x410640000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xe
+@0x410740000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x2
+@0x410840000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked
+@0x410940000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x5
+@0x410a40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked
+@0x410b40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x2
+@0x410c40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x8
+@0x410d40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x3
+@0x410e40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x6
+@0x410f40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xb
+@0x411040000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x7
+@0x411140000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x1
+@0x411240000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x4
+@0x411340000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xa
+@0x411440000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x6
+@0x411540000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x8
+@0x411640000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x9
+@0x411740000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x4
+@0x411840000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xf
+@0x411940000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xa
+@0x411a40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x9
+@0x411b40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x1
+@0x411c40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x5
+@0x411d40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x1
+@0x411e40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xb
+@0x411f40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked
+@0x412040000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x5
+@0x412140000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x4
+@0x412240000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x9
+@0x412340000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x4
+@0x412440000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x4
+@0x412540000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x2
+@0x412640000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x8
+@0x412740000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x1
+@0x412840000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x8
+@0x412940000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xc
+@0x412a40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x3
+@0x412b40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x8
+@0x412c40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xa
+@0x412d40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x2
+@0x412e40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xd
+@0x412f40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xb
+@0x413440000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xa
+@0x413540000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xb
+@0x413640000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked
+@0x413740000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x7
+@0x413c40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x6
+@0x413d40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x9
+@0x413e40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x9
+@0x413f40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked
+@0x414040000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x8
+@0x414140000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x3
+@0x414240000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x6
+@0x414340000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xc
+@0x414440000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x5
+@0x414540000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x3
+@0x414640000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x2
+@0x414740000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked
+@0x414840000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x6
+@0x414940000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x4
+@0x414a40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xc
+@0x414b40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x4
+@0x415040000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x2
+@0x415140000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x1
+@0x415240000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x3
+@0x415340000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x1
+@0x415840000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x5
+@0x415940000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x3
+@0x415a40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x4
+@0x415b40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x6
+@0x415c40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x8
+@0x415d40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xb
+@0x415e40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xd
+@0x415f40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xe
+@0x416040000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x7
+@0x416140000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x3
+@0x416240000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x5
+@0x416340000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x9
+@0x416440000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xe
+@0x416540000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x3
+@0x416640000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xf
+@0x416740000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xc
+@0x416840000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xc
+@0x416940000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x4
+@0x416a40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xb
+@0x416b40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xa
+@0x416c40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xe
+@0x416d40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x8
+@0x416e40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xb
+@0x416f40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x8
+@0x417040000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x2
+@0x417140000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x4
+@0x417240000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xb
+@0x417340000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x6
+@0x417440000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x2
+@0x417540000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked
+@0x417640000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x5
+@0x417740000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x7
+@0x417840000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x1
+@0x417940000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xf
+@0x417a40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x3
+@0x417b40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xd
+@0x417c40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x6
+@0x417d40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xa
+@0x417e40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xd
+@0x417f40000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0xc
+@0x418040000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x4
+@0x418140000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x5
+@0x418240000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked
+@0x418340000    0x18c 0x0af r1.2  ETM            Arm ETMv4 rev1   aff=0x81000000 pdsr=0x00000021 ETMv4.1 ts:64 bb cc min-ccit:4 events:4 resources:16 addrcomp:4 ssc:1 pecomp:0 counters:2 seqstates:4 extin:4 extinsel:4 unlocked claimed:0x3
+ATB topology detection complete.

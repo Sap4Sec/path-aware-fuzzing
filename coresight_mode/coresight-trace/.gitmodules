@@ -1,0 +1,9 @@
+[submodule "CSAL"]
+	path = CSAL
+	url = https://github.com/RICSecLab/CSAL.git
+[submodule "coresight-decoder"]
+	path = coresight-decoder
+	url = https://github.com/RICSecLab/coresight-decoder.git
+[submodule "udmabuf"]
+	path = udmabuf
+	url = https://github.com/ikwzm/udmabuf.git

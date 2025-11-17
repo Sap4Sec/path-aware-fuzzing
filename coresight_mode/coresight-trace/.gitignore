@@ -1,0 +1,10 @@
+bench
+tags
+trace
+cs-proxy
+cs-trace
+*.o
+*.bin
+*.ini
+tests/fib
+edge_coverage_bitmap.out

@@ -1,0 +1,483 @@
+# LocalTests
+ext/
+BUILD
+SRC
+target
+*.bkp
+afl_out 
+*.afl
+*.cmplog 
+*.zip
+afl_out*/
+
+unifuzz/*/path/triage_build/test
+unifuzz/*/pcguard/triage_build/test
+unifuzz/*/selective/triage_build/test
+unifuzz/*/pcguard/test
+unifuzz/*/pcguard/ttest
+unifuzz/*/pcguard/test-old
+unifuzz/*/path/test
+unifuzz/*/path/ttest
+unifuzz/processing-test
+unifuzz/processing-test.7z
+unifuzz/*/pathafl/test
+unifuzz/*/pathafl/instrumented
+unifuzz/*/pathafl/triage_build/test
+unifuzz/*/afl/test
+unifuzz/*/afl/instrumented
+unifuzz/*/afl/triage_build/test
+unifuzz/*/selective/test
+unifuzz/*/classic/test
+unifuzz/*/path/test-old
+unifuzz/*/path/test-64
+unifuzz/*/clean/test
+unifuzz/*/clean/latest
+unifuzz/*/clean/gllvm
+unifuzz/*/clean/
+unifuzz/*/clean/test-latest
+unifuzz/*/clean/triage
+unifuzz/*/clean/test-cov
+unifuzz/*/clean/triage-O0
+unifuzz/results*
+unifuzz/dgx-results
+
+afl_triage_plot.py
+
+# AFL
+as
+a.out
+ld
+in
+out
+core*
+compile_commands.json
+afl-analyze
+afl-as
+afl-clang
+afl-clang++
+afl-clang-fast
+afl-clang-fast++
+afl-clang-lto
+afl-clang-lto++
+afl-fuzz
+afl-g++
+afl-gcc
+afl-gcc-fast
+afl-g++-fast
+afl-gotcpu
+afl-ld
+afl-ld-lto
+afl-cs-proxy
+afl-qemu-trace
+afl-showmap
+afl-tmin
+afl-analyze.8
+afl-as.8
+afl-clang-fast++.8
+afl-clang-fast.8
+afl-clang-lto.8
+afl-clang-lto++.8
+afl-cmin.8
+afl-cmin.bash.8
+afl-fuzz.8
+afl-c++.8
+afl-cc.8
+afl-gcc.8
+afl-g++.8
+afl-gcc-fast.8
+afl-g++-fast.8
+afl-gotcpu.8
+afl-plot.8
+afl-showmap.8
+afl-system-config.8
+afl-tmin.8
+afl-whatsup.8
+afl-persistent-config.8
+afl-c++
+afl-cc
+afl-lto
+afl-lto++
+afl-lto++.8
+afl-lto.8
+qemu_mode/libcompcov/compcovtest
+qemu_mode/qemu-*
+qemu_mode/qemuafl
+unicorn_mode/samples/*/\.test-*
+unicorn_mode/samples/*/output/
+test/unittests/unit_maybe_alloc
+test/unittests/unit_preallocable
+test/unittests/unit_list
+test/unittests/unit_rand
+test/unittests/unit_hash
+examples/afl_network_proxy/afl-network-server
+examples/afl_network_proxy/afl-network-client
+examples/afl_frida/afl-frida
+examples/afl_frida/libtestinstr.so
+examples/afl_frida/frida-gum-example.c
+examples/afl_frida/frida-gum.h
+examples/aflpp_driver/libAFLDriver.a
+examples/aflpp_driver/libAFLQemuDriver.a
+libAFLDriver.a
+libAFLQemuDriver.a
+test/.afl_performance
+test-instr
+test/output
+test/test-instr.ts
+test/test-persistent
+gmon.out
+afl-frida-trace.so
+utils/afl_network_proxy/afl-network-client
+utils/afl_network_proxy/afl-network-server
+utils/plot_ui/afl-plot-ui
+*.o.tmp
+utils/afl_proxy/afl-proxy
+utils/optimin/build
+utils/optimin/optimin
+utils/persistent_mode/persistent_demo
+utils/persistent_mode/persistent_demo_new
+utils/persistent_mode/test-instr
+!coresight_mode
+!coresight_mode/coresight-trace
+vuln_prog
+
+# vscode
+.vscode
+.clang-format
+pyrightconfig.json
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+!unifuzz/objdump/path/seeds/*.o
+!unifuzz/objdump/pcguard/seeds/*.o
+!unifuzz/objdump/selective/seeds/*.o
+!unifuzz/objdump/pathafl/seeds/*.o
+!unifuzz/objdump/afl/seeds/*.o
+
+!unifuzz/nm-new/path/seeds/*.o
+!unifuzz/nm-new/pcguard/seeds/*.o
+!unifuzz/nm-new/selective/seeds/*.o
+!unifuzz/nm-new/pathafl/seeds/*.o
+!unifuzz/nm-new/afl/seeds/*.o
+
+!unifuzz/oss-objd/path/seeds/*.o
+!unifuzz/oss-objd/pcguard/seeds/*.o
+
+!unifuzz/oss-nm/path/seeds/*.o
+!unifuzz/oss-nm/pcguard/seeds/*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Latex stuff - TODO: remove before moving to the public repo
+## Core latex/pdflatex auxiliary files:
+template.tex
+
+*.pdf
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+## Intermediate documents:
+*.dvi
+*.xdv
+*-converted-to.*
+# these rules might exclude image files for figures etc.
+# *.ps
+# *.eps
+# *.pdf
+
+## Generated if empty string is given at "Please type another file name for output:"
+.pdf
+!figures/*.pdf
+
+## Bibliography auxiliary files (bibtex/biblatex/biber):
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+## Build tool auxiliary files:
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+## Build tool directories for auxiliary files
+# latexrun
+latex.out/
+
+## Auxiliary and intermediate files from other packages:
+# algorithms
+*.alg
+*.loa
+
+# achemso
+acs-*.bib
+
+# amsthm
+*.thm
+
+# beamer
+*.nav
+*.pre
+*.snm
+*.vrb
+
+# changes
+*.soc
+
+# comment
+*.cut
+
+# cprotect
+*.cpt
+
+# elsarticle (documentclass of Elsevier journals)
+*.spl
+
+# endnotes
+*.ent
+
+# fixme
+*.lox
+
+# feynmf/feynmp
+*.mf
+*.mp
+*.t[1-9]
+*.t[1-9][0-9]
+*.tfm
+
+#(r)(e)ledmac/(r)(e)ledpar
+*.end
+*.?end
+*.[1-9]
+*.[1-9][0-9]
+*.[1-9][0-9][0-9]
+*.[1-9]R
+*.[1-9][0-9]R
+*.[1-9][0-9][0-9]R
+*.eledsec[1-9]
+*.eledsec[1-9]R
+*.eledsec[1-9][0-9]
+*.eledsec[1-9][0-9]R
+*.eledsec[1-9][0-9][0-9]
+*.eledsec[1-9][0-9][0-9]R
+
+# glossaries
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.lzo
+*.lzs
+
+# uncomment this for glossaries-extra (will ignore makeindex's style files!)
+# *.ist
+
+# gnuplottex
+*-gnuplottex-*
+
+# gregoriotex
+*.gaux
+*.gtex
+
+# htlatex
+*.4ct
+*.4tc
+*.idv
+*.lg
+*.trc
+*.xref
+
+# hyperref
+*.brf
+
+# knitr
+*-concordance.tex
+# TODO Comment the next line if you want to keep your tikz graphics files
+*.tikz
+*-tikzDictionary
+
+# listings
+*.lol
+
+# luatexja-ruby
+*.ltjruby
+
+# makeidx
+*.idx
+*.ilg
+*.ind
+
+# minitoc
+*.maf
+*.mlf
+*.mlt
+*.mtc[0-9]*
+*.slf[0-9]*
+*.slt[0-9]*
+*.stc[0-9]*
+
+# minted
+_minted*
+*.pyg
+
+# morewrites
+*.mw
+
+# nomencl
+*.nlg
+*.nlo
+*.nls
+
+# pax
+*.pax
+
+# pdfpcnotes
+*.pdfpc
+
+# sagetex
+*.sagetex.sage
+*.sagetex.py
+*.sagetex.scmd
+
+# scrwfile
+*.wrt
+
+# sympy
+*.sout
+*.sympy
+sympy-plots-for-*.tex/
+
+# pdfcomment
+*.upa
+*.upb
+
+# pythontex
+*.pytxcode
+pythontex-files-*/
+
+# tcolorbox
+*.listing
+
+# thmtools
+*.loe
+
+# TikZ & PGF
+*.dpth
+*.md5
+*.auxlock
+
+# todonotes
+*.tdo
+
+# vhistory
+*.hst
+*.ver
+
+# easy-todo
+*.lod
+
+# xcolor
+*.xcp
+
+# xmpincl
+*.xmpi
+
+# xindy
+*.xdy
+
+# xypic precompiled matrices and outlines
+*.xyc
+*.xyd
+
+# endfloat
+*.ttt
+*.fff
+
+# Latexian
+TSWLatexianTemp*
+
+## Editors:
+# WinEdt
+*.bak
+*.sav
+
+# Texpad
+.texpadtmp
+
+# LyX
+*.lyx~
+
+# Kile
+*.backup
+
+# gummi
+.*.swp
+
+# KBibTeX
+*~[0-9]*
+
+# TeXnicCenter
+*.tps
+
+# auto folder when using emacs and auctex
+./auto/*
+*.el
+
+# expex forward references with \gathertags
+*-tags.tex
+
+# standalone packages
+*.sta
+
+# Makeindex log files
+*.lpz
+acmart-primary/
+paper.old
+ndsspaper.tex
+tt/
+paper.old.tex
