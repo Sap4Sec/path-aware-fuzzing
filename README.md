@@ -128,9 +128,11 @@ cd unifuzz/mp3gain/path
 
 ```bash
 export RUNTIME=10800  # 3 hours; default is 172800 (48 hours)
-export FUZZING_WINDOW_ORIG=3600  # 1 hour; default is 21600 (6 hours)
 ```
 *Optionally, adjust `FUZZING_WINDOW_ORIG` to change the duration of culling rounds.*
+```bash
+export FUZZING_WINDOW_ORIG=3600  # 1 hour; default is 21600 (6 hours)
+```
 
 6. Start the session, invoking one among:
 
