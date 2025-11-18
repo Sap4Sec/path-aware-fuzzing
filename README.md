@@ -197,7 +197,7 @@ Ensure you set correct values for the `seeds` and `output` directories, and the 
 Refer to the culling script ([scripts/fuzz-cull.sh](scripts/fuzz-cull.sh)) for the culling workflow. The script includes a `fuzz` function that you may need to adjust for your target program (for example, to set the correct input/output placeholders or execution wrapper).
 
 ## Reusability
-The entire system can also be extended and customized to test any chosen program with our path-aware instrumentation (and, optionally, our queue culling procedure). 
+The entire system can also be extended and customized to test any chosen program with our path-aware instrumentation (and, optionally, our queue culling procedure), as long as it is compatible with the AFL++ fuzzer. 
 
 The first step to that end is creating the build script for the program to test. You can refer to those we provide to build the UniFuzz subjects (e.g. [unifuzz/objdump/path/build_path.sh](unifuzz/objdump/path/build_path.sh)). The crucial details to take care of are:
 1. Enabling our path-aware instrumentation
