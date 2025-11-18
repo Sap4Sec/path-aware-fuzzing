@@ -134,13 +134,21 @@ export RUNTIME=10800  # 3 hours; default is 172800 (48 hours)
 export FUZZING_WINDOW_ORIG=3600  # 1 hour; default is 21600 (6 hours)
 ```
 
-6. Start the session, invoking one among:
+6. (a) Start the session, invoking one among:
 
 ```bash
 ./start_session.sh         # normal run
 ```
 ```bash
 ./start_session.sh -cull   # culling-enabled run
+```
+
+6. (b) We also provide a queue produced with the edge coverage feedback ([edge_queue.7z](unifuzz/mp3gain/path/edge_queue.7z)). You can use it to try out our opportunistic strategy (`opp` fuzzer):
+```bash 
+7z x edge_queue.7z
+rm -rf seeds
+mv edge_queue seeds
+./start_session.sh         # opportunistic run
 ```
 
 At the end of the session, the `afl_out_0/` directory will contain the complete results of the fuzzing campaign. The results of the crash deduplication* process (if at least 1 crash was detected) will be located in the `afl_out_0/u-crashes5` directory for a normal fuzzing run, while for a culling run the final results will be located in the `afl_out_0/u-crashes5/uniques` folder.
