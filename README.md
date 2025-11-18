@@ -26,7 +26,7 @@ TODO: will need to add the paper DOI
 
 This project was developed around the following toolchain and platform versions (recommended for reproduction):
 
-- AFL++ 4.07a
+- AFL++ 4.07a (included in this artifact)
 - LLVM 12.0.1
 - Ubuntu 20.04 (experiment platform)
 - Rust 1.78.0 (required by AFLTriage)
