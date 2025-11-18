@@ -62,11 +62,11 @@ The [unifuzz/](unifuzz/) directory contains the scripts and Docker images to rep
 Each `path`/`pcguard` sub-directory contains a `Dockerfile` to create a container instance for that specific `<fuzzer,subject>` pair.
 You can run any of them by using the provided shell scripts or by executing equivalent commands inside the container. The primary contents of each benchmark sub-directory are:
 - `seeds/` - initial seeds to fuzz the subject
-- `triage_build/build.sh` - creates a clean, uninstrumented build used for crash triaging (AFLTriage)
-- `pc_build/build_pcguard.sh` (`path/` only) - builds the target with AFL++'s `pcguard` instrumentation; used in comparative runs and by the queue culling script
+- `triage_build/build.sh` - creates a clean, uninstrumented build used for crash triaging with AFLTriage
+- `pc_build/build_pcguard.sh` (`path/` only) - builds the target with the `pcguard` instrumentation; used by the queue culling script
 - `build_image.sh` - builds the Docker image for the subject
 - `run_docker.sh` - launches the Docker image as a container instance
-- `build_bench.sh` (`path/` only) - pulls the UniFuzz subject and builds it with the path-aware instrumentation; then builds it with `pcguard` for comparison
+- `build_bench.sh` (`path/` only) - pulls the UniFuzz subject and builds it with the path-aware instrumentation; then invokes `pc_build/build_pcguard.sh`
 - `build_pcguard.sh` (`pcguard/` only) - builds the subject with the `pcguard` instrumentation
 - `Dockerfile` - container recipe for the benchmark
 - `fuzz_cmplog.sh` - starts a standard AFL++ fuzzing run by invoking `afl-fuzz`
