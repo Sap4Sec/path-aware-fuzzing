@@ -2,7 +2,7 @@
 
 This repository provides the source code and evaluation scripts used in the "Towards Path-aware Coverage-guided Fuzzing" paper, to appear in Proceedings of CGO 2026.
 
-The purpose of this work is to improve coverage-guided fuzzing by introducing path-aware instrumentation: an intra-procedural execution-path-based feedback mechanism which increases sensitivity to distinct program behaviors within functions.
+The purpose of this work is to improve coverage-guided fuzzing by introducing a path-aware instrumentation: an intra-procedural execution-path-based feedback mechanism which increases sensitivity to distinct program behaviors within functions.
 
 ## Cite 
 If you are referencing our work in your research, please consider using the following BibTeX entry:
