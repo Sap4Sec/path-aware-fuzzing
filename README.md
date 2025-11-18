@@ -42,7 +42,7 @@ The AFL++ components modified to incorporate our path-aware feedback include the
 - [src/afl-fuzz-run.c](src/afl-fuzz-run.c) - to implement a single-calibration cycle (used by the aggressive mode of the culling script)
 - [include/config.h](include/config.h) - to set the default map size and define the single-calibration cycle
 - [include/envs.h](include/envs.h) - to define the new environment variables we introduced in the fuzzer
-- [GNUmakefile.llvm](GNUmakefile.llvm) - to compile our analyses and transformation passes (see below) alongside AFL++
+- [GNUmakefile.llvm](GNUmakefile.llvm) - to compile our analysis and transformation passes (see below) alongside AFL++
 
 Instrumentation
 ------------------------
