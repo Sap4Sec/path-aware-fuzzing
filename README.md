@@ -57,7 +57,7 @@ UniFuzz Targets
 The [unifuzz/](unifuzz/) directory contains the scripts and Docker images to reproduce the [UniFuzz](https://github.com/unifuzz) targets evaluated in the paper. Subject directories follow the layout `unifuzz/<subject>/[path|pcguard]`.
 
 - `path`: scripts and Docker image for building and running a subject with the path-aware instrumentation provided by this repository (`path`, `cull` and `opp` fuzzers).
-- `pcguard`: scripts and Docker image for building and running the subject with AFL++'s `pcguard` instrumentation (used for baseline comparisons).
+- `pcguard`: scripts and Docker image for building and running a subject with AFL++'s `pcguard` instrumentation (used for baseline comparisons).
 
 Each `path`/`pcguard` sub-directory contains a `Dockerfile` to create a container instance for that specific `<fuzzer,subject>` pair.
 You can run any of them by using the provided shell scripts or by executing equivalent commands inside the container. The primary contents of each benchmark sub-directory are:
