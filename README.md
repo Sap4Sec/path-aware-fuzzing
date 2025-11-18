@@ -182,7 +182,7 @@ export CXX="${AFL_PATH}/afl-clang-fast++"
 
 2. Now you can build the program you want to fuzz using its default building system (`make`, `cmake`, `automake`, etc.)
 
-2.5. [Optional] As in our paper evaluation, you may also enable the [cmplog](instrumentation/README.cmplog.md) instrumentation by setting the required environment variable (`export AFL_LLVM_CMPLOG=1`), and then building the target program once again.
+    2.5. [Optional] As in our paper evaluation, you may also enable the [cmplog](instrumentation/README.cmplog.md) instrumentation by setting the required environment variable (`export AFL_LLVM_CMPLOG=1`), and then building the target program once again.
 
 #### <a name="fuzz"></a> 3. Fuzzing the target program
 Start the fuzzing campaign as you would normally do with AFL++:
