@@ -76,3 +76,4 @@ unicorn_mode/unicornafl
 Dockerfile-ubuntu.base
 Dockerfile-fuzzing-config.base
 build_base_images.sh
+setup.sh

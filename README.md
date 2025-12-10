@@ -196,7 +196,20 @@ Ensure you set correct values for the `seeds` and `output` directories, and the 
 ##### Running the culling-enhanced fuzzer
 Refer to the culling script ([scripts/fuzz-cull.sh](scripts/fuzz-cull.sh)) for the culling workflow. The script includes a `fuzz` function that you may need to adjust for your target program (for example, to set the correct input/output placeholders or execution wrapper).
 
-## Reusability
+#### Local install script
+We provide a script to automate the installation and environment configuration process: [setup.sh](setup.sh). The script is tasked with downloading the required dependencies, installing the fuzzer and the other tools we use in our evaluation (like AFLTriage), and configuring the required environment variables. 
+
+The script should be invoked with: 
+
+```bash
+source setup.sh
+```
+
+Upon completion, your current shell will be configured to run our fuzzer either on the UniFuzz subjects from [unifuzz/](unifuzz/) (you can use the provided `start_session.sh` scripts), or on any other program compatible with AFL++ (please refer to the ["Reusability"](#reuse) section).
+
+*Please beware that a local installation will (most likely) only work in an exactly identical enviroment as the one in which we developed our system (an x86-64 machine running Ubuntu version 20.04).*
+
+## <a name="reuse"></a> Reusability
 The entire system can also be extended and customized to test any chosen program with our path-aware instrumentation (and, optionally, our queue culling procedure), as long as it is compatible with the AFL++ fuzzer. 
 
 The first step to that end is creating the build script for the program to test. You can refer to those we provide to build the UniFuzz subjects (e.g. [unifuzz/objdump/path/build_path.sh](unifuzz/objdump/path/build_path.sh)). The crucial details to take care of are:

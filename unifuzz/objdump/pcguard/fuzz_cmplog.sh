@@ -1,6 +1,5 @@
 #!/bin/bash
 
-export AFL_PATH="/home/afl/"
 export AFLFUZZ="${AFL_PATH}/afl-fuzz"
 
 dict="$(find . -maxdepth 1 -name *.dict | xargs echo)"

@@ -6,12 +6,12 @@ set -x
 if [[ $1 == "-cull" ]]; then
     echo "RUNNING FUZZING+CULLING SESSION"
     mkdir afl_out_${BIND_CPU}
-    /home/afl/scripts/fuzz-cull.sh
+    ${AFL_PATH}/scripts/fuzz-cull.sh
 else 
     echo "RUNNING FUZZING SESSION"
     ./fuzz_cmplog.sh
 fi
-/home/afl/scripts/deduplicate_crashes.sh
+${AFL_PATH}/scripts/deduplicate_crashes.sh
 
 set +x
 echo "** THE FUZZING SESSION IS OVER **"
