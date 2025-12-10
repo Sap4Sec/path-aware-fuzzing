@@ -221,7 +221,7 @@ export AFL_LLVM_INSTRUMENT="classic"
 
 2. Setting AFL++ as the default compiler:
 ```bash
-export AFL_PATH="/path/to/afl-fuzz" # Set this to point to the root directory of this repository
+export AFL_PATH="/path/to/afl-fuzz/" # Set this to point to the root directory of this repository
 export CC="${AFL_PATH}/afl-clang-fast"
 export CXX="${AFL_PATH}/afl-clang-fast++"
 ```
