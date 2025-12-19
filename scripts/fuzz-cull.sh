@@ -2,6 +2,8 @@
 
 # Wrapper script to run queue culling-enhanced path aware fuzzer.
 
+export RANDOM_CULLING=0 # Set this to 1 to enable the random queue culling strategy (default: Favored seeds)
+
 TOTAL_RUNTIME=$RUNTIME  # Total runtime of the fuzzing campaign
 export FUZZING_WINDOW=$FUZZING_WINDOW_ORIG # Duration of a fuzzing round
 FUZZING_ROUNDS=$((TOTAL_RUNTIME / FUZZING_WINDOW))
@@ -26,10 +28,6 @@ function fuzz_cull {
         echo "Usage: $0 <in_dir> <out_dir>"
         exit 3
     fi
-
-    #1) Fuzz the contents of $1/default/queue with -E 0 to perform a dry run
-    #2) Create $2 (the output directory)
-    #3) Copy the favored test cases to $2
 
     idx=$(echo $2 | cut -d "_" -f 2)
     tmp_dir="fuzz_tmp_out_${idx}"
@@ -62,37 +60,55 @@ function fuzz_cull {
 
     rm -rf test_in/.state
 
-    # This is required to instruct AFL++ to dump the favored seeds to file
-    export PATH_DUMP_FAVORED=1
-
-    d3=$(date +%s)
-    bash fuzz_enhanced.sh test_in $tmp_dir -E
-    d4=$(date +%s)
-    delta2=$((d4 - d3))
-    echo "Delta (afl-fuzz -E): ${delta2}" >>log.txt
-
-    unset PATH_DUMP_FAVORED
-
-    if [[ $AGGRESSIVE_CULLING == 1 ]]; then
-        unset CULL_FAST_CAL
-    fi
-
+    # Create $2 (the output directory where the non-culled seeds will be placed)
     mkdir $2
 
-    echo "Culling non-favored seeds" >>log.txt
-    d5=$(date +%s)
-    cat seeds.favored | cut -d "/" -f 4 > seeds.favored.names
-    d6=$(date +%s)
-    delta3=$((d6 - d5))
-    echo "Delta (cat seeds.favored [...]): ${delta3}" >>log.txt
+    if [[ $RANDOM_CULLING == 1 ]]; then # Use random culling (need to set the RANDOM_CULLING env var to 1)
+        echo "Culling the queue randomly" >>log.txt
+        d7=$(date +%s)
+        echo "[RANDOM_CULLING] Debug beginning" >> log.txt 
+        python3 ${AFL_PATH}/scripts/random_culling.py test_in $2 &>> log.txt
+        echo "[RANDOM_CULLING] Debug end" >> log.txt 
+        d8=$(date +%s)
+        delta4=$((d8 - d7))
+        echo "Delta (random culling): ${delta4}" >>log.txt
     
-    echo "Putting favored into $2"
-    
-    d7=$(date +%s)
-    while read line; do cp ${tmp_dir}/default/queue/${line} $2; done < seeds.favored.names
-    d8=$(date +%s)
-    delta4=$((d8 - d7))
-    echo "Delta (while read [...] do cp [...] <seeds.favored): ${delta4}" >>log.txt
+    else # Default culling strategy (Favored seeds)
+        echo "Culling non-favored seeds" >>log.txt
+
+        #1) Fuzz the contents of $1/default/queue with -E 0 to perform a dry run
+
+
+        # This is required to instruct AFL++ to dump the favored seeds to file
+        export PATH_DUMP_FAVORED=1
+
+        d3=$(date +%s)
+        bash fuzz_enhanced.sh test_in $tmp_dir -E
+        d4=$(date +%s)
+        delta2=$((d4 - d3))
+        echo "Delta (afl-fuzz -E): ${delta2}" >>log.txt
+
+        unset PATH_DUMP_FAVORED
+
+        if [[ $AGGRESSIVE_CULLING == 1 ]]; then
+            unset CULL_FAST_CAL
+        fi
+
+        d5=$(date +%s)
+        cat seeds.favored | cut -d "/" -f 4 > seeds.favored.names
+        d6=$(date +%s)
+        delta3=$((d6 - d5))
+        echo "Delta (cat seeds.favored [...]): ${delta3}" >>log.txt
+
+        #3) Copy the favored test cases to $2
+        echo "Putting favored into $2"
+
+        d7=$(date +%s)
+        while read line; do cp ${tmp_dir}/default/queue/${line} $2; done < seeds.favored.names
+        d8=$(date +%s)
+        delta4=$((d8 - d7))
+        echo "Delta (while read [...] do cp [...] <seeds.favored): ${delta4}" >>log.txt
+    fi
 
     rm -rf test_in
 }
@@ -199,7 +215,11 @@ function main_loop {
 }
 
 rm -rf out*
-echo "Culling strategy: FAVORED seeds"
+if [[ $RANDOM_CULLING == 1 ]]; then
+    echo "Culling strategy: RANDOM CULLING"
+else
+    echo "Culling strategy: FAVORED seeds"
+fi
 
 # Aggressive culling toggle: use when the culling step takes too long
 if [[ $AGGRESSIVE_CULLING == 1 ]]; then
