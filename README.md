@@ -102,7 +102,7 @@ Alternatively, if you want to use our scripts, please follow these steps:
 3. Start the building and testing session by invoking `./start_session.sh`. This script will:
     1. Build the target program using `build_bench.sh` or `build_pcguard.sh`.
     2. Start the fuzzing campaign using `fuzz_cmplog.sh`.
-    You can optionally pass the `-cull` parameter to `start_session.sh` to fuzz the program using our queue culling technique (path-aware fuzzing only). This invokes the queue culling script ([scripts/fuzz-cull.sh](scripts/fuzz-cull.sh)) script, which interleaves the fuzzing process with queue culling rounds and collects the results at the end of the run
+    You can optionally pass the `-cull` parameter to `start_session.sh` to fuzz the program using our queue culling technique (path-aware fuzzing only). This invokes the queue culling script ([scripts/fuzz-cull.sh](scripts/fuzz-cull.sh)), which interleaves the fuzzing process with queue culling rounds and collects the results at the end of the run
     3. Invoke the crash deduplication script ([scripts/deduplicate_crashes.sh](scripts/deduplicate_crashes.sh)) to automatically derive the unique crashes* detected by the fuzzer (if present) using the [AFLTriage](https://github.com/quic/AFLTriage.git) tool
 
 ### Minimal Working Example
@@ -195,6 +195,8 @@ Ensure you set correct values for the `seeds` and `output` directories, and the 
 
 ##### Running the culling-enhanced fuzzer
 Refer to the culling script ([scripts/fuzz-cull.sh](scripts/fuzz-cull.sh)) for the culling workflow. The script includes a `fuzz` function that you may need to adjust for your target program (for example, to set the correct input/output placeholders or execution wrapper).
+
+You can also enable the random culling strategy (that we introduce in Appendix D of our paper) by toggling the `RANDOM_CULLING` environment variable inside the script.
 
 #### Local install script
 We provide a script to automate the installation and environment configuration process: [setup.sh](setup.sh). The script is tasked with downloading the required dependencies, installing the fuzzer and the other tools we use in our evaluation (like AFLTriage), and configuring the required environment variables. 
