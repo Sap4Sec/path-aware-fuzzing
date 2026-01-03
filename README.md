@@ -1,6 +1,6 @@
 # Path-aware Fuzzing
 
-This repository provides the source code and evaluation scripts used in the "Towards Path-aware Coverage-guided Fuzzing" paper, to appear in Proceedings of CGO 2026 (you can find a pre-print version [here](https://www.diag.uniroma1.it/~delia/papers/cgo26-blfuzz.pdf).
+This repository provides the source code and evaluation scripts used in the "Towards Path-aware Coverage-guided Fuzzing" paper, to appear in Proceedings of CGO 2026 (you can find a pre-print version [here](https://www.diag.uniroma1.it/~delia/papers/cgo26-blfuzz.pdf)).
 
 The purpose of this work is to improve coverage-guided fuzzing by introducing a path-aware instrumentation: an intra-procedural execution-path-based feedback mechanism which increases sensitivity to distinct program behaviors within functions.
 
