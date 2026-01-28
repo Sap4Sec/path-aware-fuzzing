@@ -1,6 +1,8 @@
 # Path-aware Fuzzing
 
-This repository provides the source code and evaluation scripts used in the "Towards Path-aware Coverage-guided Fuzzing" paper, to appear in Proceedings of CGO 2026 (you can find a pre-print version of the paper [here](https://www.diag.uniroma1.it/~delia/papers/cgo26-blfuzz.pdf)).
+<p><a href="https://github.com/Sap4Sec/path-aware-fuzzing/blob/main/paper/preprint.pdf"><img alt="PFuzzer" align="right" width="320" src="paper/paper_thumbnail.png"></a></p>
+
+This repository provides the source code and evaluation scripts used in the "Towards Path-aware Coverage-guided Fuzzing" paper, to appear in Proceedings of CGO 2026 (you can find a preprint copy of the paper in the [paper/](./paper/preprint.pdf) directory).
 
 The purpose of this work is to improve coverage-guided fuzzing by introducing a path-aware instrumentation: an intra-procedural execution-path-based feedback mechanism which increases sensitivity to distinct program behaviors within functions.
 
@@ -13,7 +15,7 @@ TODO: will need to add the paper DOI
 ```bibtex
 @INPROCEEDINGS{Priamo-CGO26,
   author={Priamo, Giacomo and D’Elia, Daniele Cono and Payer, Mathias and Querzoni, Leonardo},
-  title={Towards Path-aware Coverage-guided Fuzzing},
+  title={Towards Path-Aware Coverage-Guided Fuzzing},
   booktitle = {Proceedings of the 2026 IEEE/ACM International Symposium on Code Generation and Optimization},
   publisher = {IEEE Press},
   series = {CGO '26},
