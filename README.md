@@ -1,6 +1,6 @@
 # Path-aware Fuzzing
 
-<p><a href="https://github.com/Sap4Sec/path-aware-fuzzing/blob/main/paper/preprint.pdf"><img alt="PFuzzer" align="right" width="320" src="paper/paper_thumbnail.png"></a></p>
+<p><a href="https://github.com/Sap4Sec/path-aware-fuzzing/blob/main/paper/preprint.pdf"><img alt="Thumbnail" align="right" width="160" src="paper/paper_thumbnail.png"></a></p>
 
 This repository provides the source code and evaluation scripts used in the "Towards Path-aware Coverage-guided Fuzzing" paper, to appear in Proceedings of CGO 2026 (you can find a preprint copy of the paper in the [paper/](./paper/preprint.pdf) directory).
 
