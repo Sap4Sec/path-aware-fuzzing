@@ -15,13 +15,14 @@ TODO: will need to add the paper DOI
 ```bibtex
 @INPROCEEDINGS{Priamo-CGO26,
   author={Priamo, Giacomo and D’Elia, Daniele Cono and Payer, Mathias and Querzoni, Leonardo},
-  title={Towards Path-Aware Coverage-Guided Fuzzing},
-  booktitle = {Proceedings of the 2026 IEEE/ACM International Symposium on Code Generation and Optimization},
-  publisher = {IEEE Press},
-  series = {CGO '26},
-  location = {Sydney, Australia},
-  year={2026}
-}
+  booktitle={2026 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)}, 
+  title={Towards Path-Aware Coverage-Guided Fuzzing}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={84-97},
+  keywords={Measurement;Instruments;Image edge detection;Computer bugs;Fuzzing;Throughput;Explosions;Software;Standards;Optimization;Fuzzing;Coverage feedback;Path profiling},
+  doi={10.1109/CGO68049.2026.11395191}}
 ```
 
 ## Dependencies
