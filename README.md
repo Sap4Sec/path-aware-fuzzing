@@ -2,9 +2,9 @@
 
 <p><a href="https://github.com/Sap4Sec/path-aware-fuzzing/blob/main/paper/preprint.pdf"><img alt="Thumbnail" align="right" width="160" src="paper/paper_thumbnail.png"></a></p>
 
-This repository provides the source code and evaluation scripts used in the "Towards Path-aware Coverage-guided Fuzzing" paper, to appear in Proceedings of CGO 2026 (you can find a preprint copy of the paper in the [paper/](./paper/preprint.pdf) directory).
+This repository provides the source code and evaluation scripts used in the "Towards Path-aware Coverage-guided Fuzzing" paper, appeared in the [Proceedings of the 2026 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)](https://ieeexplore.ieee.org/abstract/document/11395191). A preprint copy of the paper is provided in the [paper/](./paper/preprint.pdf) folder.
 
-The purpose of this work is to improve coverage-guided fuzzing by introducing a path-aware instrumentation: an intra-procedural execution-path-based feedback mechanism which increases sensitivity to distinct program behaviors within functions.
+The purpose of this work is to improve coverage-guided fuzzing by introducing a path-aware instrumentation that tracks intra-procedural execution paths, which is used to refine its feedback mechanism to increase its sensitivity to distinct program behaviors within functions.
 
 ## Cite 
 If you are referencing our work in your research, please consider using the following BibTeX entry:
@@ -13,16 +13,15 @@ If you are referencing our work in your research, please consider using the foll
 TODO: will need to add the paper DOI
 -->
 ```bibtex
-@INPROCEEDINGS{Priamo-CGO26,
+@INPROCEEDINGS{priamo2026towards,
+  title={Towards Path-Aware Coverage-Guided Fuzzing},
   author={Priamo, Giacomo and D’Elia, Daniele Cono and Payer, Mathias and Querzoni, Leonardo},
-  booktitle={2026 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)}, 
-  title={Towards Path-Aware Coverage-Guided Fuzzing}, 
+  booktitle={2026 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)},  
   year={2026},
-  volume={},
-  number={},
-  pages={84-97},
+  pages={84--97},
   keywords={Measurement;Instruments;Image edge detection;Computer bugs;Fuzzing;Throughput;Explosions;Software;Standards;Optimization;Fuzzing;Coverage feedback;Path profiling},
-  doi={10.1109/CGO68049.2026.11395191}}
+  doi={10.1109/CGO68049.2026.11395191}
+}
 ```
 
 ## Dependencies
